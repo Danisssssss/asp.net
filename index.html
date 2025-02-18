@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио веб-разработчика</title>
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Awesome -->
+    <script src="https://kit.fontawesome.com/804f16f665.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
 </head>
+
 <body>
     <div class="page">
         <header class="header">
@@ -19,7 +26,7 @@
                         <img src="assets/images/logo.svg" alt="">
                     </a>
                     <div class="header-menu">
-                        <a href="#" class="menu_item">Link 1</a>
+                        <a href="#" class="menu_item">Обо мне</a>
                         <a href="#" class="menu_item">Link 2</a>
                         <a href="#" class="menu_item">Link 3</a>
                         <a href="#" class="menu_item">Link 4</a>
@@ -27,19 +34,111 @@
                 </div>
             </div>
         </header>
-        <section class="section section--contact">
+
+        <section class="hero">
             <div class="container">
-                <div class="section-title">Контакты</div>
-                1
+                <div class="hero-wrapper">
+                    <h2 class="hero-subtitle">Привет, я</h2>
+                    <h1 class="hero-title">Фамилия Имя</h1>
+                    <h4 class="hero-job">Веб-разработчик</h4>
+                    <a href="#" class="hero-more btn">Узнать больше</a>
+                </div>
             </div>
         </section>
+
+        <section class="section section--aboutme">
+            <div class="container">
+                <div class="aboutme-wrapper">
+                    <h2 class="section-title">Обо мне</h2>
+                    <div class="aboutme-top">
+                        <div class="aboutme-top-item">
+                            <div class="aboutme-top-item-icon">
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="aboutme-top-item-title">Опыт</div>
+                            <div class="aboutme-top-item-text">х лет работы</div>
+                        </div>
+                        <div class="aboutme-top-item">
+                            <div class="aboutme-top-item-icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div class="aboutme-top-item-title">Выполнено</div>
+                            <div class="aboutme-top-item-text">х проектов</div>
+                        </div>
+                    </div>
+                    <div class="aboutme-bottom">
+                        <p class="aboutme-bottom-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ullam adipisci labore suscipit ipsum, earum eos ipsa dignissimos alias ab nihil quod neque est voluptatem nam autem quibusdam perferendis fugiat!</p>
+                        <a href="#" class="aboutme-bottom-btn btn">Связаться со мной</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--contact">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-left">
+                        <div class="section-subtitle">Напиши мне</div>
+                        <form action="" class="contact-form">
+                            <div>
+                                <input type="text" placeholder="Введите ваше имя" class="contact-input">
+                                <div class="contact-input-title">Имя</div>
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Введите вашу почту" class="contact-input">
+                                <div class="contact-input-title">Email</div>
+                            </div>
+                            <div>
+                                <textarea placeholder="Напиши сообщение"
+                                    class="contact-input contact-textarea"></textarea>
+                                <div class="contact-input-title">Сообщение</div>
+                            </div>
+
+                            <input type="button" value="Отправить" class="contact-submit btn">
+                        </form>
+                    </div>
+                    <div class="contact-right">
+                        <div class="section-subtitle">Контактная информация</div>
+                        <div class="contant-item">
+                            <div class="contant-item-icon">
+                                <i class="fa-regular fa-map"></i>
+                            </div>
+                            <div class="contant-item-title">Адрес</div>
+                            <div class="contant-item-text">г. Город, ул. Улица 0, кв. 0</div>
+                        </div>
+                        <div class="contant-item">
+                            <div class="contant-item-icon">
+                                <i class="fa-solid fa-square-phone"></i>
+                            </div>
+                            <div class="contant-item-title">Телефон</div>
+                            <div class="contant-item-text">+7(999) 99-99-99</div>
+                        </div>
+                        <div class="contant-item">
+                            <div class="contant-item-icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="contant-item-title">Email</div>
+                            <div class="contant-item-text">user@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <footer class="footer">
             <div class="container">
                 <div class="footer-wrapper">
-                    Footer
+                    <div class="footer-socials">
+                        <a href="#" class="fa-brands fa-vk"></a>
+                        <a href="#" class="fa-brands fa-telegram"></a>
+                        <a href="#" class="fa-brands fa-github"></a>
+                    </div>
+                    <div class="footer-copyright">© Danis Yahyaev. Все права защищены</div>
                 </div>
             </div>
         </footer>
     </div>
 </body>
+
 </html>
