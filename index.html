@@ -26,10 +26,10 @@
                         <img src="assets/images/logo.svg" alt="">
                     </a>
                     <div class="header-menu">
-                        <a href="#" class="menu_item">Обо мне</a>
-                        <a href="#" class="menu_item">Мои навыки</a>
-                        <a href="#" class="menu_item">Работы</a>
-                        <a href="#" class="menu_item">Контакты</a>
+                        <a href="#" class="menu_item" data-target="aboutme">Обо мне</a>
+                        <a href="#" class="menu_item" data-target="skills">Мои навыки</a>
+                        <a href="#" class="menu_item" data-target="works">Работы</a>
+                        <a href="#" class="menu_item" data-target="contact">Контакты</a>
                     </div>
                 </div>
             </div>
@@ -41,12 +41,12 @@
                     <h2 class="hero-subtitle">Привет, я</h2>
                     <h1 class="hero-title">Фамилия Имя</h1>
                     <h4 class="hero-job">Веб-разработчик</h4>
-                    <a href="#" class="hero-more btn">Узнать больше</a>
+                    <a href="#" class="hero-more btn" data-target="contact">Узнать больше</a>
                 </div>
             </div>
         </section>
 
-        <section class="section section--aboutme">
+        <section class="section section--aboutme" id="aboutme">
             <div class="container">
                 <div class="aboutme-wrapper">
                     <h2 class="section-title">Обо мне</h2>
@@ -67,14 +67,16 @@
                         </div>
                     </div>
                     <div class="aboutme-bottom">
-                        <p class="aboutme-bottom-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ullam adipisci labore suscipit ipsum, earum eos ipsa dignissimos alias ab nihil quod neque est voluptatem nam autem quibusdam perferendis fugiat!</p>
-                        <a href="#" class="aboutme-bottom-btn btn">Связаться со мной</a>
+                        <p class="aboutme-bottom-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                            ullam adipisci labore suscipit ipsum, earum eos ipsa dignissimos alias ab nihil quod neque
+                            est voluptatem nam autem quibusdam perferendis fugiat!</p>
+                        <a href="#" class="aboutme-bottom-btn btn" data-target="contact">Связаться со мной</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section section--skills">
+        <section class="section section--skills" id="skills">
             <div class="container">
                 <div class="skills-wrapper">
                     <h2 class="section-title">Мои навыки</h2>
@@ -142,7 +144,7 @@
             </div>
         </section>
 
-        <section class="section section--works">
+        <section class="section section--works" id="works">
             <div class="container">
                 <div class="works-wrapper">
                     <h2 class="section-title">Работы</h2>
@@ -164,7 +166,7 @@
             </div>
         </section>
 
-        <section class="section section--contact">
+        <section class="section section--contact" id="contact">
             <div class="container">
                 <h2 class="section-title">Контакты</h2>
                 <div class="contact-wrapper">
@@ -215,7 +217,7 @@
                 </div>
             </div>
         </section>
-        
+
         <footer class="footer">
             <div class="container">
                 <div class="footer-wrapper">
@@ -229,6 +231,7 @@
             </div>
         </footer>
     </div>
+    <script src="assets/script.js"></script>
 </body>
 
 </html>
