@@ -1,4 +1,4 @@
-document.querySelectorAll('.menu_item, .hero-more, .aboutme-bottom-btn').forEach(link => {
+document.querySelectorAll('.menu_item, .hero-more, .aboutme-bottom-btn, .header-logo').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
         const targetId = this.dataset.target; // Получаем ID секции
@@ -13,3 +13,14 @@ document.querySelectorAll('.menu_item, .hero-more, .aboutme-bottom-btn').forEach
         }
     });
 });
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 1 });
+
+document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
