@@ -24,3 +24,8 @@ const observer = new IntersectionObserver((entries, observer) => {
 }, { threshold: 1 });
 
 document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
+
+document.querySelector('.toggle-theme').addEventListener('click', (event) => {
+    event.preventDefault();
+    document.querySelector('.page').classList.toggle('dark');
+});
