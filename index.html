@@ -19,7 +19,7 @@
 
 <body>
     <div class="page">
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
                 <div class="header-wrapper">
                     <a href="#" class="header-logo" data-target="hero">
@@ -27,14 +27,14 @@
                         <img class="header-logo-light" src="assets/images/logo-white.svg" alt="">
                     </a>
                     <div class="header-menu">
-                        <a href="#" class="menu_item" data-target="aboutme">Обо мне</a>
+                        <!-- <a href="#" class="menu_item" data-target="aboutme">Обо мне</a>
                         <a href="#" class="menu_item" data-target="skills">Мои навыки</a>
                         <a href="#" class="menu_item" data-target="works">Работы</a>
                         <a href="#" class="menu_item" data-target="contact">Контакты</a>
                         <a href="#" class="toggle-theme">
                             <i class="fa-classic fa-solid fa-moon fa-fw toggle-theme-moon"></i>
                             <i class="fa-classic fa-solid fa-sun fa-fw toggle-theme-sun"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
             <div class="container">
                 <div class="hero-wrapper">
                     <h2 class="hero-subtitle">Привет, я</h2>
-                    <h1 class="hero-title">Фамилия Имя</h1>
+                    <h1 class="hero-title hero-name"></h1>
                     <h4 class="hero-job">Веб-разработчик</h4>
                     <a href="#" class="hero-more btn" data-target="aboutme">Узнать больше</a>
                 </div>
@@ -61,20 +61,18 @@
                                 <i class="fa-regular fa-star"></i>
                             </div>
                             <div class="aboutme-top-item-title">Опыт</div>
-                            <div class="aboutme-top-item-text">х лет работы</div>
+                            <div class="aboutme-top-item-text about-experience"></div>
                         </div>
                         <div class="aboutme-top-item">
                             <div class="aboutme-top-item-icon">
                                 <i class="fa-solid fa-briefcase"></i>
                             </div>
-                            <div class="aboutme-top-item-title">Выполнено</div>
-                            <div class="aboutme-top-item-text">х проектов</div>
+                            <div class="aboutme-top-item-title ">Выполнено</div>
+                            <div class="aboutme-top-item-text about-projects"></div>
                         </div>
                     </div>
                     <div class="aboutme-bottom hidden">
-                        <p class="aboutme-bottom-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            ullam adipisci labore suscipit ipsum, earum eos ipsa dignissimos alias ab nihil quod neque
-                            est voluptatem nam autem quibusdam perferendis fugiat!</p>
+                        <p class="aboutme-bottom-text about-text"></p>
                         <a href="#" class="aboutme-bottom-btn btn" data-target="contact">Связаться со мной</a>
                     </div>
                 </div>
@@ -237,6 +235,7 @@
         </footer>
     </div>
     <script src="assets/script.js"></script>
+    <script src="assets/content.js"></script>
 </body>
 
 </html>
