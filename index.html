@@ -27,15 +27,11 @@
                         <img class="header-logo-light" src="assets/images/logo-white.svg" alt="">
                     </a>
                     <div class="header-menu">
-                        <!-- <a href="#" class="menu_item" data-target="aboutme">Обо мне</a>
-                        <a href="#" class="menu_item" data-target="skills">Мои навыки</a>
-                        <a href="#" class="menu_item" data-target="works">Работы</a>
-                        <a href="#" class="menu_item" data-target="contact">Контакты</a>
-                        <a href="#" class="toggle-theme">
-                            <i class="fa-classic fa-solid fa-moon fa-fw toggle-theme-moon"></i>
-                            <i class="fa-classic fa-solid fa-sun fa-fw toggle-theme-sun"></i>
-                        </a> -->
                     </div>
+                    <a href="#" class="toggle-theme">
+                        <i class="fa-classic fa-solid fa-moon fa-fw toggle-theme-moon"></i>
+                        <i class="fa-classic fa-solid fa-sun fa-fw toggle-theme-sun"></i>
+                    </a>
                 </div>
             </div>
         </header>
@@ -86,61 +82,9 @@
                     <div class="skills-top">
                         <div class="skills-item hidden">
                             <p class="skills-item-title">Frontend</p>
-                            <div class="skills-item-list">
-                                <div class="skills-item-list-item">
-                                    <div class="skills-item-list-item-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <div class="skills-item-list-item-title">HTML</div>
-                                </div>
-                                <div class="skills-item-list-item">
-                                    <div class="skills-item-list-item-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <div class="skills-item-list-item-title">CSS</div>
-                                </div>
-                                <div class="skills-item-list-item">
-                                    <div class="skills-item-list-item-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <div class="skills-item-list-item-title">JavaScript</div>
-                                </div>
-                                <div class="skills-item-list-item">
-                                    <div class="skills-item-list-item-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <div class="skills-item-list-item-title">GIT</div>
-                                </div>
-                                <div class="skills-item-list-item">
-                                    <div class="skills-item-list-item-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <div class="skills-item-list-item-title">React</div>
-                                </div>
-                            </div>
                         </div>
                         <div class="skills-item hidden">
                             <p class="skills-item-title">Backend</p>
-                            <div class="skills-item-list">
-                                <div class="skills-item-list-item">
-                                    <div class="skills-item-list-item-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <div class="skills-item-list-item-title">PHP</div>
-                                </div>
-                                <div class="skills-item-list-item">
-                                    <div class="skills-item-list-item-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <div class="skills-item-list-item-title">MySQL</div>
-                                </div>
-                                <div class="skills-item-list-item">
-                                    <div class="skills-item-list-item-icon">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <div class="skills-item-list-item-title">NodeJS</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -151,19 +95,7 @@
             <div class="container">
                 <div class="works-wrapper">
                     <h2 class="section-title">Работы</h2>
-                    <div class="works-top">
-                        <div class="works-item hidden">
-                            <div class="works-item-image">
-                                <img src="https://placehold.co/800x400" alt="">
-                            </div>
-                            <div class="works-item-title">Title</div>
-                        </div>
-                        <div class="works-item hidden">
-                            <div class="works-item-image">
-                                <img src="https://placehold.co/800x400" alt="">
-                            </div>
-                            <div class="works-item-title">Title</div>
-                        </div>
+                    <div class="works-top works-list">
                     </div>
                 </div>
             </div>
@@ -177,20 +109,22 @@
                         <div class="section-subtitle">Напиши мне</div>
                         <form action="" class="contact-form">
                             <div class="hidden">
-                                <input type="text" placeholder="Введите ваше имя" class="contact-input">
-                                <div class="contact-input-title">Имя</div>
+                                <label for="name" class="contact-input-title">Имя</label>
+                                <input type="text" id="name" name="name" placeholder="Введите ваше имя"
+                                    class="contact-input" required>
                             </div>
                             <div class="hidden">
-                                <input type="email" placeholder="Введите вашу почту" class="contact-input">
-                                <div class="contact-input-title">Email</div>
+                                <label for="email" class="contact-input-title">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Введите вашу почту"
+                                    class="contact-input" required>
                             </div>
                             <div class="hidden">
-                                <textarea placeholder="Напиши сообщение"
-                                    class="contact-input contact-textarea"></textarea>
-                                <div class="contact-input-title">Сообщение</div>
+                                <label for="message" class="contact-input-title">Сообщение</label>
+                                <textarea id="message" name="message" placeholder="Напишите сообщение"
+                                    class="contact-input contact-textarea" required></textarea>
                             </div>
 
-                            <input type="button" value="Отправить" class="contact-submit btn">
+                            <button type="submit" class="contact-submit btn">Отправить</button>
                         </form>
                     </div>
                     <div class="contact-right">
@@ -200,21 +134,21 @@
                                 <i class="fa-regular fa-map"></i>
                             </div>
                             <div class="contant-item-title">Адрес</div>
-                            <div class="contant-item-text">г. Город, ул. Улица 0, кв. 0</div>
+                            <div class="contant-item-text contact-address"></div>
                         </div>
                         <div class="contant-item hidden">
                             <div class="contant-item-icon">
                                 <i class="fa-solid fa-square-phone"></i>
                             </div>
                             <div class="contant-item-title">Телефон</div>
-                            <div class="contant-item-text">+7(999) 99-99-99</div>
+                            <div class="contant-item-text contact-phone"></div>
                         </div>
                         <div class="contant-item hidden">
                             <div class="contant-item-icon">
                                 <i class="fa-regular fa-envelope"></i>
                             </div>
                             <div class="contant-item-title">Email</div>
-                            <div class="contant-item-text">user@gmail.com</div>
+                            <div class="contant-item-text contact-email"></div>
                         </div>
                     </div>
                 </div>
@@ -229,13 +163,31 @@
                         <a href="#" class="fa-brands fa-telegram"></a>
                         <a href="#" class="fa-brands fa-github"></a>
                     </div>
-                    <div class="footer-copyright">© Danis Yahyaev. Все права защищены</div>
+                    <div class="footer-copyright"> </div>
                 </div>
             </div>
         </footer>
+
+        <!-- Модальное окно -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="modal-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+                <h2>Ваши данные:</h2>
+                <p><strong>Имя:</strong> <span id="modal-name"></span></p>
+                <p><strong>Email:</strong> <span id="modal-email"></span></p>
+                <p><strong>Сообщение:</strong></p>
+                <p id="modal-message"></p>
+            </div>
+        </div>
+
     </div>
-    <script src="assets/script.js"></script>
+
+    <!-- Scripts -->
     <script src="assets/content.js"></script>
+    <script src="assets/contact.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 
 </html>

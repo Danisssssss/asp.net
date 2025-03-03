@@ -1,19 +1,26 @@
-document.querySelectorAll('.menu_item, .hero-more, .aboutme-bottom-btn, .header-logo').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.dataset.target; // Получаем ID секции
-        const targetSection = document.getElementById(targetId);
+// Прокрутка к секциям
+document.addEventListener("DOMContentLoaded", function () {
+    const menuItems = document.querySelectorAll(".menu_item, .hero-more, .aboutme-bottom-btn, .header-logo");
 
-        if (targetSection) {
-            const offsetTop = targetSection.offsetTop - 100; // Отступ в 100px
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
+    menuItems.forEach(item => {
+        item.addEventListener("click", function (event) {
+            event.preventDefault();
+            
+            const targetId = this.dataset.target;
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                    const offsetTop = targetSection.offsetTop - 100;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+        });
     });
 });
 
+// Анимация появления элементоа
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -23,6 +30,7 @@ const observer = new IntersectionObserver((entries, observer) => {
     });
 }, { threshold: 1 });
 
+// Смена темы
 document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
 
 document.querySelector('.toggle-theme').addEventListener('click', (event) => {
